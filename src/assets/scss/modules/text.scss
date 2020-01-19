@@ -1,0 +1,103 @@
+.text {
+  color: $mainFontColor;
+  font-family: $mainFont;
+
+  &--main {
+    max-width: 24.2vw;
+    font-size: rem(32);
+  }
+
+  &--pb20 {
+    padding-bottom: rem(20);
+  }
+
+  &--pb40 {
+    padding-bottom: rem(40);
+  }
+
+  &--pr110 {
+    padding-right: 5.73vw;
+  }
+
+  &--pr145 {
+    padding-right: 7.55vw;
+  }
+
+  $line-heights: 31, 32, 38;
+  @each $lh in $line-heights {
+    &--lh#{$lh} {
+      line-height: rem($lh);
+    }
+  }
+
+  $font-sizes: 32, 40, 48;
+  @each $fs in $font-sizes {
+    &--fs#{$fs} {
+      font-size: rem($fs);
+    }
+  }
+
+  $colors: ("light": $default-color,
+             "warn": $warning-bckgr,
+              "def": $mainFontColor);
+  @each $color, $color-value in $colors {
+    &--color-#{$color} {
+      color: $color-value;
+    }
+  }
+
+  $letter-spacings: (024: 0.24,
+                     032: 0.32,
+                      04: 0.4,
+                     048: 0.48);
+  @each $lspac, $lspac-value in $letter-spacings {
+    &--lspac#{$lspac} {
+      letter-spacing: rem($lspac-value);
+    }
+  }
+
+  &--fw-bold {
+    font-weight: 700;
+  }
+
+  &--ffam-second {
+    font-family: $secondFont;
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    &--main {
+      max-width: none;
+      font-size: 1.15rem;
+    }
+      
+    &--pr110 {
+      padding-right: 0;
+    }
+
+    &--pr145 {
+      padding-right: 0;
+    }
+
+    &--pb40 {
+      padding-bottom: 1rem;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    &--fs40 {
+      font-size: 32px;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+
+    &__wrap {
+      width: 70vw;
+      margin-top: 5vw;
+      margin-bottom: 12vw;
+      text-align: center;
+    }
+  }
+}

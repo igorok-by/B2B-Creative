@@ -1,0 +1,109 @@
+.section {
+
+  &--bg-1 {
+    height: rem(576);
+    background: top center / cover no-repeat url(/assets/img/bg-1.jpg);
+  }
+
+  &--bg-2 {
+    background: top center / cover no-repeat url(/assets/img/bg-2.jpg);
+  }
+
+  $margin-tops: (-273:-14.22, -224:-11.667);
+  @each $mt, $mt-value in $margin-tops {
+    &--mt#{$mt} {
+      margin-top: #{$mt-value}vw;
+    }
+  }
+
+  &--pt325 {
+    padding-top: 16.93vw;
+  }
+  
+  &__title {
+    font-size: rem(60);
+    font-family: $secondFont;
+    font-weight: 700;
+    letter-spacing: rem(0.6);
+  }
+
+  &__title--mt150 {
+    margin-top: 5.7vw;
+  }
+  
+  &__title--small {
+    margin-bottom: 2.2vw;
+    color: $warning-bckgr;
+    font-size: rem(52);
+    letter-spacing: rem(0.52);
+  }
+
+  @include media-breakpoint-down(xl) {
+
+    &--mt-273 {
+      margin-top: -18vw;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+
+    &--bg-1 {
+      height: 26rem;
+    }
+    
+    &--mt-273 {
+      margin-top: -14vw;
+    }
+
+    &--pt325 {
+      padding-top: 20vw;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+
+    &--bg-1 {
+      height: 27rem;
+    }
+      
+    &__title {
+      font-size: 2rem;
+    }
+    
+    &__title--small {
+      font-size: 1.8rem;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    &--bg-1 {
+      height: 25rem;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+
+    &--bg-1 {
+      height: 28rem;
+    }
+
+    &--mt-273 {
+      margin-top: -18vw;
+    }
+
+    &--pt325 {
+      padding-top: 26vw;
+    }
+
+    &__title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    
+    &__title--small {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}

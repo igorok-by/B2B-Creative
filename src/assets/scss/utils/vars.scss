@@ -1,0 +1,59 @@
+// Font
+$mainFont                : 'Alegreya', Helvetica, Arial, sans-serif;
+$secondFont              : 'Spectral', Georgia, serif;
+$thirdFont               : 'Spectral', Georgia, serif;
+
+
+// Size
+$mainFontColor           : #000;
+$mainFontSize            : 24px;
+$mainFontWeight          : 400;
+$mainLineHeight          : 1;
+
+$grid-gutter-width       : 30px;
+$grid-breakpoints        : (xxs: 0,
+                             xs: 321px,
+                             sm: 501px,
+                             md: 771px,
+                             lg: 1025px,
+                             xl: 1281px,
+                            xxl: 1441px);
+
+$container-max-widths    : (xs: 320px,
+                            sm: 500px,
+                            md: 750px,
+                            lg: 1000px,
+                            xl: 1200px,
+                           xxl: 1400px);
+
+
+// Main color
+$dark-color              : #201f1e;
+$default-color           : #fff;
+$primary-color           : #108be9;
+$success-color           : #6df6eb;
+$danger-color            : #ff005d;
+$warning-color           : #ecb86c;
+
+// Background
+$primary-bckgr           : #fefefe;
+$default-bckgr           : #b9b8b4;
+$warning-bckgr           : #a47e67;
+$hover-bckgr             : #dbb974;
+$dark-bckgr              : #393939;
+
+// Neutral Color
+$neutral-primary         : #595666;
+$neutral-regular         : #121212;
+$neutral-secondary       : #AEAEAE;
+$neutral-placeholder     : #CACACA;
+
+// Border Color
+$border-base             : #DCDFE6;
+$border-light            : #E4E7ED;
+$border-lighter          : #EBEEF5;
+$border-lightex          : #F2F6FC;
+
+// Transition
+$default-transition      : all .3s cubic-bezier(0.25, 0.1, 0.25, 1);
+$long-transition      : all .8s cubic-bezier(0.25, 0.1, 0.25, 1);

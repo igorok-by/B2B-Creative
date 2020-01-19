@@ -1,0 +1,219 @@
+.tile {
+  position: relative;
+  margin-top: 4.7vw;
+  line-height: rem(32);
+
+  $widths: 149, 205;
+  @each $w in $widths {
+    &--w#{$w} {
+      width: rem($w);
+    }
+  }
+  
+  $margin-lefts: (-160:-8.385, -45:-2.24, 80:4.17);
+  @each $ml, $ml-value in $margin-lefts {
+    &--ml#{$ml} {
+      margin-left: #{$ml-value}vw;
+    }
+  }
+  
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: rem(205);
+  }
+
+  &__img--letter {
+    top: rem(-47);
+    left: rem(215);
+
+    @extend %letter;
+  }
+
+  &__img--folder {
+    top: -2.08vw;
+    left: rem(231);
+    
+    @extend %folder;
+  }
+
+  &__img--diamond {
+    top: -1.04vw;
+    left: rem(170);
+    
+    @extend %diamond;
+  }
+
+  &__img--winner {
+    top: -1.93vw;
+    left: rem(212);
+    
+    @extend %winner;
+  }
+
+  &__img--secure {
+    top: -1.4vw;
+    left: rem(232);
+    
+    @extend %secure;
+  }
+
+  @include media-breakpoint-down(xl) {
+
+    margin-top: 3.8vw;
+
+    &__img {
+      transform: scale(.8);
+    }
+      
+    &__img--letter {
+      left: rem(170);
+    }
+
+    @each $ml, $ml-value in $margin-lefts {
+      &--ml#{$ml} {
+        margin-left: #{$ml-value + 2}vw;
+      }
+    }
+  }
+  
+  @include media-breakpoint-down(lg) {
+
+    margin-top: 4.5vw;
+
+    &__img {
+      transform: scale(.6);
+    }
+
+    &__img--letter {
+      top: -5vw;
+      left: rem(130);
+    }
+
+    &__img--folder {
+      top: -3vw;
+      left: rem(180);
+    }
+
+    &__img--diamond {
+      top: -2vw;
+      left: rem(120);
+    }
+
+    &__img--winner {
+      top: -3vw;
+      left: rem(150);
+    }
+
+    &__img--secure {
+      top: -2vw;
+      left: rem(170);
+    }
+
+    @each $ml, $ml-value in $margin-lefts {
+      &--ml#{$ml} {
+        margin-left: #{$ml-value}vw;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+
+    &__img--letter {
+      left: rem(110);
+    }
+
+    &__img--folder {
+      left: rem(150);
+    }
+
+    &__img--winner {
+      left: rem(120);
+    }
+
+    &__img--secure {
+      left: rem(150);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    &__wrap {
+      margin-top: -1.95vw;
+    }
+
+    &__img {
+      transform: scale(.4);
+    }
+
+    &__img--letter {
+      top: -7vw;
+      left: rem(60);
+    }
+
+    &__img--folder {
+      top: -5vw;
+      left: rem(110);
+    }
+
+    &__img--diamond {
+      top: -4vw;
+      left: rem(80);
+    }
+
+    &__img--winner {
+      top: -5vw;
+      left: rem(80);
+    }
+
+    &__img--secure {
+      top: -5vw;
+      left: rem(100);
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+
+    width: 100%;
+    margin-left: 0;
+    margin-top: 14vw;
+    padding-left: 120px;
+    font-size: 18px;
+    line-height: 1.15;
+
+    &__wrap {
+      width: 100%;
+      margin-top: 6vw;
+    }
+
+    &__img--letter {
+      top: -10vw;
+      left: -40px;
+    }
+
+    &__img--folder {
+      top: -7.5vw;
+      left: -40px;
+    }
+
+    &__img--diamond {
+      top: -6.5vw;
+      left: -26px;
+    }
+
+    &__img--winner {
+      top: -8.5vw;
+      left: -37px;
+    }
+
+    &__img--secure {
+      top: -7vw;
+      left: -61px;
+    }
+  }
+}

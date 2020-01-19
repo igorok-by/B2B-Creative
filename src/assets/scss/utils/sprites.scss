@@ -1,0 +1,57 @@
+$background: url(/assets/img/sprites.png) no-repeat;
+
+%clock-1 {
+  background: $background;
+	background-position: -441px -175px ;
+	width: 36px;
+	height: 50px;
+}
+
+%clock-2 {
+  background: $background;
+	background-position: -439px -234px ;
+	width: 35px;
+	height: 48px;
+}
+
+%phone-1 {
+  background: $background;
+	background-position: -431px -129px ;
+	width: 64px;
+	height: 36px;
+}
+
+%letter {
+  background: $background;
+  background-position: 0 0;
+  width: 192px;
+  height: 157px;
+}
+
+%folder {
+  background: $background;
+  background-position: -192px 0;
+  width: 208px;
+  height: 129px;
+}
+
+%diamond {
+  background: $background;
+  background-position: -401px 0;
+  width: 157px;
+  height: 117px;
+}
+
+%winner {
+  background: $background;
+  background-position: 0 -160px ;
+  width: 176px;
+  height: 138px;
+}
+
+%secure {
+  background: $background;
+	background-position: -182px -155px ;
+	width: 243px;
+	height: 128px;
+}

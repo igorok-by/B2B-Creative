@@ -1,0 +1,36 @@
+
+// Spectral
+@font-face {
+  font-family: 'Spectral';
+  src: url('/assets/fonts/Spectral/Spectral-Bold.eot');
+  src: local('☺'),
+       url('/assets/fonts/Spectral/Spectral-Bold.woff') format('woff'),
+       url('/assets/fonts/Spectral/Spectral-Bold.ttf') format('truetype'),
+       url('/assets/fonts/Spectral/Spectral-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+// Alegreya
+@font-face {
+  font-family: 'Alegreya';
+  src: url('/assets/fonts/Alegreya/AlegreyaSans-Regular.eot');
+  src: local('☺'),
+       url('/assets/fonts/Alegreya/AlegreyaSans-Regular.woff') format('woff'),
+       url('/assets/fonts/Alegreya/AlegreyaSans-Regular.ttf') format('truetype'),
+       url('/assets/fonts/Alegreya/AlegreyaSans-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Alegreya';
+	src: url('/assets/fonts/Alegreya/AlegreyaSans-Bold.eot');
+  src: local('☺'),
+       url('/assets/fonts/Alegreya/AlegreyaSans-Bold.woff') format('woff'),
+       url('/assets/fonts/Alegreya/AlegreyaSans-Bold.ttf') format('truetype'),
+       url('/assets/fonts/Alegreya/AlegreyaSans-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}

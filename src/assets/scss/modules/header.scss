@@ -1,0 +1,77 @@
+.header {
+  width: 100%;
+  padding-top: 1.2vw;
+  padding-bottom: 1.46vw;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-top: rem(-5);
+    margin-left: 3.125vw;
+  }
+
+  &__item-icon {
+    margin-right: rem(25);
+  }
+
+  &__item-icon--clock-1 {
+    @extend %clock-1;
+  }
+
+  &__item-icon--clock-2 {
+    @extend %clock-2;
+  }
+  
+  &__item-icon--phone-1 {
+    margin-right: rem(15);
+    
+    @extend %phone-1;
+  }
+
+  &__item:hover &__item-icon {
+    animation-duration: 1.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-name: shake;
+  }
+  
+  &__item-descr {
+    font-size: rem(16);
+    line-height: rem(21);
+  }
+
+  &__item-link {
+    color: $mainFontColor;
+    font-size: rem(16);
+    line-height: rem(21);
+    transition: $default-transition;
+  }
+
+  &__item-link:hover {
+    color: $dark-color;
+    border-bottom: 1px solid $hover-bckgr;
+  }
+
+  @include media-breakpoint-down(xl) {
+
+    padding-bottom: 2.5vw;
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    &__item-icon {
+      display: none;
+    }
+      
+    &__item-descr {
+      font-size: rem(19);
+    }
+  }
+  
+  @include media-breakpoint-down(xs) {
+
+    padding-top: 3vw;
+    padding-bottom: 9vw;
+  }
+}

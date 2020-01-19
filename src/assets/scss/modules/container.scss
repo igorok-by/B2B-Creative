@@ -1,0 +1,9 @@
+.container {
+  @include make-container();
+  @include make-container-max-widths();
+
+  &--fluid {
+    // max-width: 100% !important; 
+    max-width: none !important;
+  }
+}
